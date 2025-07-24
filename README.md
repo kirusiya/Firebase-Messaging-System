@@ -59,41 +59,6 @@ A comprehensive real-time messaging application built with **Next.js 14**, **Typ
 
 ---
 
-## 📁 Project Architecture
-
-\`\`\`
-├── app/                          # Next.js App Router
-│   ├── auth/                     # Authentication pages
-│   │   └── page.tsx              # Login/Register page
-│   ├── layout.tsx                # Root layout with providers
-│   ├── page.tsx                  # Main chat interface
-│   └── globals.css               # Global styles
-├── components/
-│   ├── auth/                     # Authentication components
-│   │   ├── login-form.tsx        # Login form with loader
-│   │   └── register-form.tsx     # Registration form
-│   ├── chat/                     # Chat interface components
-│   │   ├── message-input.tsx     # Message composition with reply
-│   │   ├── message-list.tsx      # Message display with reactions
-│   │   └── user-list.tsx         # User sidebar with online status
-│   ├── layout/                   # Layout components
-│   │   └── header.tsx            # App header with user info
-│   └── ui/                       # shadcn/ui components
-├── contexts/                     # React Context providers
-│   └── auth-context.tsx          # Authentication state management
-├── hooks/                        # Custom React hooks
-│   ├── use-messages.ts           # Message operations and real-time sync
-│   └── use-users.ts              # User list management
-├── lib/                          # Utilities and configuration
-│   └── firebase.ts               # Firebase configuration and initialization
-├── types/                        # TypeScript type definitions
-│   └── index.ts                  # Global interfaces and types
-└── public/                       # Static assets
-    └── sounds/                   # Notification sounds (legacy)
-\`\`\`
-
----
-
 ## 🚀 Quick Start
 
 ### Prerequisites
