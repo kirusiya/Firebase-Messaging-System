@@ -296,9 +296,11 @@ The application is a standard Next.js app and can be deployed to any platform su
 
 ---
 
-**Developer**: Ing. Edward Avalos  
-**Year**: 2025  
-**Technologies**: Next.js 14, TypeScript, Firebase, Tailwind CSS, shadcn/ui
+## 🔣 Developer   
+
+- 👨‍💻 **Ing. Edward Avalos** - *Full Stack Developer y Desarrollador Principal* - [GitHub](https://github.com/kirusiya/) | [LinkedIn](https://www.linkedin.com/in/edward-avalos-severiche/)
+- 📧 **Email**: edward@ajamba.org
+- 📱 **WhatsApp Business**: (+591) 61781119 | [Whatsapp](https://wa.me/59161781119)
 
 ---
 
