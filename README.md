@@ -57,6 +57,44 @@ A comprehensive real-time messaging application built with **Next.js 14**, **Typ
 | **Utilities** | date-fns (time formatting) |
 | **Development** | ESLint, TypeScript strict mode |
 
+
+---
+
+## 📁 Project Architecture
+
+```
+├── app/                          # Next.js App Router
+│   ├── auth/                     # Authentication pages
+│   │   └── page.tsx              # Login/Register page
+│   ├── layout.tsx                # Root layout with providers
+│   ├── page.tsx                  # Main chat interface
+│   └── globals.css               # Global styles
+├── components/
+│   ├── auth/                     # Authentication components
+│   │   ├── login-form.tsx        # Login form with loader
+│   │   └── register-form.tsx     # Registration form
+│   ├── chat/                     # Chat interface components
+│   │   ├── message-input.tsx     # Message composition with reply
+│   │   ├── message-list.tsx      # Message display with reactions
+│   │   └── user-list.tsx         # User sidebar with online status
+│   ├── layout/                   # Layout components
+│   │   └── header.tsx            # App header with user info
+│   └── ui/                       # shadcn/ui components
+├── contexts/                     # React Context providers
+│   └── auth-context.tsx          # Authentication state management
+├── hooks/                        # Custom React hooks
+│   ├── use-messages.ts           # Message operations and real-time sync
+│   └── use-users.ts              # User list management
+├── lib/                          # Utilities and configuration
+│   └── firebase.ts               # Firebase configuration and initialization
+├── types/                        # TypeScript type definitions
+│   └── index.ts                  # Global interfaces and types
+└── public/                       # Static assets
+    └── sounds/                   # Notification sounds (legacy)
+
+```
+
+
 ---
 
 ## 🚀 Quick Start
@@ -69,11 +107,11 @@ A comprehensive real-time messaging application built with **Next.js 14**, **Typ
 ### Installation
 
 1. **Clone and Install Dependencies**
-   \`\`\`bash
+   ```bash
    git clone <repository-url>
    cd autsai-messaging-system
    npm install
-   \`\`\`
+   ```
 
 2. **Firebase Project Setup**
    
@@ -119,19 +157,19 @@ A comprehensive real-time messaging application built with **Next.js 14**, **Typ
 4. **Environment Configuration**
    
    Create `.env.local` in project root:
-   \`\`\`env
+   ```env
    NEXT_PUBLIC_FIREBASE_API_KEY=your_api_key_here
    NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your_project.firebaseapp.com
    NEXT_PUBLIC_FIREBASE_PROJECT_ID=your_project_id
    NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=your_project.appspot.com
    NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
    NEXT_PUBLIC_FIREBASE_APP_ID=your_app_id
-   \`\`\`
+   ```
 
 5. **Launch Development Server**
-   \`\`\`bash
+   ```bash
    npm run dev
-   \`\`\`
+   ```
    
    Open [http://localhost:3000](http://localhost:3000) in your browser.
 
@@ -161,7 +199,7 @@ A comprehensive real-time messaging application built with **Next.js 14**, **Typ
 ## 🧪 Testing & Development
 
 ### Local Testing
-\`\`\`bash
+```bash
 # Run development server
 npm run dev
 
@@ -170,7 +208,7 @@ npm run build
 
 # Start production server
 npm start
-\`\`\`
+```
 
 ### Multi-User Testing
 1. Open multiple browser windows/incognito tabs
