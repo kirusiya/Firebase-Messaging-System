@@ -94,7 +94,7 @@ A comprehensive real-time messaging application built with **Next.js 14**, **Typ
    - Register app → Copy configuration object
 
 3. **Configure Firestore Security Rules**
-   \`\`\`javascript
+   ```javascript
    rules_version = '2';
    service cloud.firestore {
      match /databases/{db}/documents {
@@ -114,7 +114,7 @@ A comprehensive real-time messaging application built with **Next.js 14**, **Typ
        }
      }
    }
-   \`\`\`
+   ```
 
 4. **Environment Configuration**
    
